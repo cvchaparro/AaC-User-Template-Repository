@@ -1,11 +1,12 @@
 import:
-  - ./message.yaml
+  files:
+    - ./message.yaml
 model:
   name: EchoExample
   description: This is a message mirroring model (echo).
   behavior:
     - name: Echo
-      type: request-response
+      type: REQUEST_RESPONSE
       description: Return a response with identical content to the request.
       input:
         - name: inbound
